@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "5af6f834-bfee-4aa4-9e7a-f75803653562",
+		"name": "JavaFundamentals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13440228"
+	},
+	"item": [
+		{
+			"name": "proyecto final",
+			"item": [
+				{
+					"name": "get usuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get usuario By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/usuario/94ebe2b5-f49c-4aa2-8077-40e1aa71674f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"94ebe2b5-f49c-4aa2-8077-40e1aa71674f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"hola\",\n    \"correo\": \"sadfsadfl22@123qewrge32245.cl\",\n    \"password\": \"misdfasdf222222\",\n    \"telefonos\": [\n        {\n            \"numero\": \"124567\",\n            \"cod_ciudad\": \"1\",\n            \"cod_pais\": \"57\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activa Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"asdfasdf\",\n    \"correo\": \"sadfsadf\",\n    \"password\": \"misdfasdf2\",\n    \"telefonos\": {\n            \"numero\": \"124567\",\n            \"cod_ciudad\": \"1\",\n            \"cod_pais\": \"57\"\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/activausuario/94ebe2b5-f49c-4aa2-8077-40e1aa71674f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"activausuario",
+								"94ebe2b5-f49c-4aa2-8077-40e1aa71674f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario/delete/7d2ff617-a49a-4e8a-b075-e7adce4bc48d",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"delete",
+								"7d2ff617-a49a-4e8a-b075-e7adce4bc48d"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7d2ff617-a49a-4e8a-b075-e7adce4bc48d",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"gabriel Guevara\",\n    \"correo\": \"hola@12345.cl\",\n    \"password\": \"misdfasdf222222\",\n    \"telefonos\": [\n        {\n            \"id\": \"edc47638-a989-48d8-8ac0-be12d0c94003\",\n            \"numero\": 124567,\n            \"cod_ciudad\": 1,\n            \"cod_pais\": 57\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/update/94ebe2b5-f49c-4aa2-8077-40e1aa71674f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"update",
+								"94ebe2b5-f49c-4aa2-8077-40e1aa71674f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Swagger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v2/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"api-docs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
