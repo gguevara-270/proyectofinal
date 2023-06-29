@@ -1,5 +1,13 @@
 # proyectofinal
 proyecto Final java Fundamentas
+### Endpoints
+
+1. getAll
+2. insert x request
+3. update x id y request
+4. activa x id
+5. delete x id 
+6. getById
 
 ### Uso de Aplicacion.
 Ojo al ejecutar la aplicacion esta debe crear las respectivas tablas Usuario y Telefono.
